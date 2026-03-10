@@ -6,7 +6,12 @@ class AppStrings {
   static const getStarted = 'Get Started';
   static const skinToneTitle = 'Your Skin Tone';
   static const skinToneSubtitle =
-      'Pick manually or let us detect from a photo.';
+      'Pick your skin tone manually or upload a photo to detect it.';
+  static const pickFromGallery = 'Choose from gallery';
+  static const pickFromCamera = 'Take a photo';
+  static const toneDetected = 'Tone detected! Tap to change.';
+  static const privacyNote =
+      'Photos are stored locally on your device and never sent anywhere.';
   static const brandsTitle = 'Pick Your Brands';
   static const resultsTitle = 'Your Shades';
 }
