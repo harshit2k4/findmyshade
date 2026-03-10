@@ -4,6 +4,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'core/theme/app_theme.dart';
 import 'core/constants/app_routes.dart';
 import 'features/home/home_screen.dart';
+import 'features/skin_tone/skin_tone_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,7 +29,7 @@ class FindMyShadeApp extends StatelessWidget {
       initialRoute: AppRoutes.home,
       getPages: [
         GetPage(name: AppRoutes.home, page: () => const HomeScreen()),
-        // skinTone, brands, results pages added as we build them
+        GetPage(name: AppRoutes.skinTone, page: () => const SkinToneScreen()),
       ],
     );
   }
