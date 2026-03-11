@@ -42,7 +42,7 @@ jobs:
       - name: Rename APK
         run: |
           mkdir output
-          cp build/app/outputs/flutter-apk/app-arm64-v8a-release.apk output/findmyshade_arm64.apk
+          cp build/app/outputs/flutter-apk/app-release.apk output/findmyshade_arm64.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
