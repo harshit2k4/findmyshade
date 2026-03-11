@@ -1,0 +1,260 @@
+[
+  {
+    "id": "lakme",
+    "name": "Lakmé",
+    "type": "Mass + Premium",
+    "shades": [
+      { "id": "lakme_01", "name": "Brick Blush",       "hex": "#B05040", "finish": "matte" },
+      { "id": "lakme_02", "name": "Scarlet Drill",     "hex": "#9A3828", "finish": "matte" },
+      { "id": "lakme_03", "name": "Blushing Nude",     "hex": "#D4907A", "finish": "matte" },
+      { "id": "lakme_04", "name": "Brownie Point",     "hex": "#9A6858", "finish": "matte" },
+      { "id": "lakme_05", "name": "Maple Map",         "hex": "#A86858", "finish": "matte" },
+      { "id": "lakme_06", "name": "Coffee Command",    "hex": "#7A4838", "finish": "matte" },
+      { "id": "lakme_07", "name": "Espresso Shot",     "hex": "#5A3028", "finish": "matte" },
+      { "id": "lakme_08", "name": "Choco Break",       "hex": "#6A3828", "finish": "matte" },
+      { "id": "lakme_09", "name": "Caramel Cut",       "hex": "#C07858", "finish": "matte" },
+      { "id": "lakme_10", "name": "Cabernet Category", "hex": "#6A1828", "finish": "matte" },
+      { "id": "lakme_11", "name": "Rosy Sunday",       "hex": "#C06878", "finish": "matte" },
+      { "id": "lakme_12", "name": "Cherry Chic",       "hex": "#B83040", "finish": "matte" },
+      { "id": "lakme_13", "name": "Orchid Dust",       "hex": "#9A6880", "finish": "matte" },
+      { "id": "lakme_14", "name": "Nude Touch",        "hex": "#C89878", "finish": "matte" },
+      { "id": "lakme_15", "name": "Sorbet Tuesday",    "hex": "#E05870", "finish": "matte" },
+      { "id": "lakme_16", "name": "Pink Perfect",      "hex": "#D05870", "finish": "matte" },
+      { "id": "lakme_17", "name": "Fuchsia File",      "hex": "#C03070", "finish": "matte" },
+      { "id": "lakme_18", "name": "Rosy Lips",         "hex": "#C87080", "finish": "matte" },
+      { "id": "lakme_19", "name": "Plum Pick",         "hex": "#6A2068", "finish": "matte" },
+      { "id": "lakme_20", "name": "Deep Wine",         "hex": "#6A1828", "finish": "matte" },
+      { "id": "lakme_21", "name": "Sangria Weekend",   "hex": "#7A1830", "finish": "matte" },
+      { "id": "lakme_22", "name": "Blushing Red",      "hex": "#C04060", "finish": "matte" },
+      { "id": "lakme_23", "name": "Red Extreme",       "hex": "#A01828", "finish": "matte" }
+    ]
+  },
+  {
+    "id": "maybelline",
+    "name": "Maybelline",
+    "type": "Mass",
+    "shades": [
+      { "id": "may_01", "name": "Divine Wine",        "hex": "#6B2030", "finish": "matte" },
+      { "id": "may_02", "name": "All Fired Up",       "hex": "#C02848", "finish": "matte" },
+      { "id": "may_03", "name": "Siren in Scarlet",   "hex": "#B82030", "finish": "matte" },
+      { "id": "may_04", "name": "Ravishing Rose",     "hex": "#C06878", "finish": "matte" },
+      { "id": "may_05", "name": "Rich Ruby",          "hex": "#9A1828", "finish": "matte" },
+      { "id": "may_06", "name": "Faint for Fuschia",  "hex": "#C83078", "finish": "matte" },
+      { "id": "may_07", "name": "Mesmerizing Magenta","hex": "#B82868", "finish": "matte" },
+      { "id": "may_08", "name": "Craving Coral",      "hex": "#E06858", "finish": "matte" },
+      { "id": "may_09", "name": "Touch of Spice",     "hex": "#B07868", "finish": "matte" },
+      { "id": "may_10", "name": "Burgundy Blush",     "hex": "#7A1830", "finish": "matte" },
+      { "id": "may_11", "name": "Nude Nuance",        "hex": "#C08A70", "finish": "matte" },
+      { "id": "may_12", "name": "Vibrant Violet",     "hex": "#6A2068", "finish": "matte" },
+      { "id": "may_13", "name": "Red Liberation",     "hex": "#B82030", "finish": "matte" },
+      { "id": "may_14", "name": "Understated Red",    "hex": "#A02838", "finish": "matte" },
+      { "id": "may_15", "name": "Daringly Nude",      "hex": "#C89878", "finish": "matte" },
+      { "id": "may_16", "name": "Nude Embrace",       "hex": "#C09070", "finish": "matte" },
+      { "id": "may_17", "name": "Chilli Nude",        "hex": "#B87058", "finish": "matte" },
+      { "id": "may_18", "name": "Almond Pink",        "hex": "#D09080", "finish": "matte" },
+      { "id": "may_19", "name": "Beige Appeal",       "hex": "#C8906A", "finish": "matte" }
+    ]
+  },
+  {
+    "id": "sugar",
+    "name": "Sugar Cosmetics",
+    "type": "Mid-Premium",
+    "shades": [
+      { "id": "sugar_01", "name": "Brazen Raisin",    "hex": "#6B2030", "finish": "matte" },
+      { "id": "sugar_02", "name": "Brink of Pink",    "hex": "#8A3858", "finish": "matte" },
+      { "id": "sugar_03", "name": "Tan Fan",          "hex": "#B08870", "finish": "matte" },
+      { "id": "sugar_04", "name": "Plum Yum",         "hex": "#6A2858", "finish": "matte" },
+      { "id": "sugar_05", "name": "Rust Lust",        "hex": "#B05038", "finish": "matte" },
+      { "id": "sugar_06", "name": "Tangerine Queen",  "hex": "#D86845", "finish": "matte" },
+      { "id": "sugar_07", "name": "Rethink Pink",     "hex": "#D04878", "finish": "matte" },
+      { "id": "sugar_08", "name": "Wine and Shine",   "hex": "#722F37", "finish": "matte" },
+      { "id": "sugar_09", "name": "Suave Mauve",      "hex": "#9A6878", "finish": "matte" },
+      { "id": "sugar_10", "name": "Drop Dead Red",    "hex": "#CC1B1B", "finish": "matte" },
+      { "id": "sugar_11", "name": "Greige Rage",      "hex": "#A88878", "finish": "matte" },
+      { "id": "sugar_12", "name": "Don Fawn",         "hex": "#8A6050", "finish": "matte" },
+      { "id": "sugar_13", "name": "Wooed by Nude",    "hex": "#C89878", "finish": "matte" },
+      { "id": "sugar_14", "name": "Teak Mystique",    "hex": "#7A5040", "finish": "matte" },
+      { "id": "sugar_15", "name": "Blush Rush",       "hex": "#E090A0", "finish": "matte" },
+      { "id": "sugar_16", "name": "Bare Flair",       "hex": "#B07870", "finish": "matte" },
+      { "id": "sugar_17", "name": "Fiery Berry",      "hex": "#7A2040", "finish": "matte" },
+      { "id": "sugar_18", "name": "Divine Praline",   "hex": "#6A2838", "finish": "matte" },
+      { "id": "sugar_19", "name": "Jet Set Violet",   "hex": "#702068", "finish": "matte" },
+      { "id": "sugar_20", "name": "Cocoa Ammo",       "hex": "#6A4030", "finish": "matte" },
+      { "id": "sugar_21", "name": "Aubergine Queen",  "hex": "#3A1828", "finish": "matte" },
+      { "id": "sugar_22", "name": "Mia Sangria",      "hex": "#882858", "finish": "matte" },
+      { "id": "sugar_23", "name": "Very Mulberry",    "hex": "#5A2048", "finish": "matte" },
+      { "id": "sugar_24", "name": "Brown Crown",      "hex": "#7A4838", "finish": "matte" },
+      { "id": "sugar_25", "name": "Trusty Rusty",     "hex": "#A84030", "finish": "matte" },
+      { "id": "sugar_26", "name": "Scarlet Starlet",  "hex": "#C02030", "finish": "matte" },
+      { "id": "sugar_27", "name": "Gotta Terracotta", "hex": "#C05838", "finish": "matte" },
+      { "id": "sugar_28", "name": "Fine Wine",        "hex": "#7A1E2A", "finish": "matte" },
+      { "id": "sugar_29", "name": "Modern Auburn",    "hex": "#A83028", "finish": "matte" }
+    ]
+  },
+  {
+    "id": "kaybeauty",
+    "name": "Kay Beauty",
+    "type": "Mid-Premium",
+    "shades": [
+      { "id": "kay_01", "name": "Premier",      "hex": "#C89070", "finish": "matte" },
+      { "id": "kay_02", "name": "Red Carpet",   "hex": "#B82030", "finish": "matte" },
+      { "id": "kay_03", "name": "Debut",        "hex": "#D07080", "finish": "matte" },
+      { "id": "kay_04", "name": "Retro",        "hex": "#A03040", "finish": "matte" },
+      { "id": "kay_05", "name": "Suspense",     "hex": "#6A2048", "finish": "matte" },
+      { "id": "kay_06", "name": "Rolling",      "hex": "#8A4838", "finish": "matte" },
+      { "id": "kay_07", "name": "Muse",         "hex": "#C07080", "finish": "matte" },
+      { "id": "kay_08", "name": "Cameo",        "hex": "#B87870", "finish": "matte" },
+      { "id": "kay_09", "name": "Rehearsal",    "hex": "#C05060", "finish": "matte" },
+      { "id": "kay_10", "name": "Snapshot",     "hex": "#D08090", "finish": "matte" },
+      { "id": "kay_11", "name": "Thriller",     "hex": "#5A1830", "finish": "matte" },
+      { "id": "kay_12", "name": "Action",       "hex": "#A82838", "finish": "matte" },
+      { "id": "kay_13", "name": "Superhit",     "hex": "#882030", "finish": "matte" },
+      { "id": "kay_14", "name": "Head Turner",  "hex": "#7A1E38", "finish": "matte" },
+      { "id": "kay_15", "name": "Flashback",    "hex": "#9A6858", "finish": "matte" },
+      { "id": "kay_16", "name": "Award Night",  "hex": "#6A2060", "finish": "matte" },
+      { "id": "kay_17", "name": "Dream Girl",   "hex": "#E07890", "finish": "matte" },
+      { "id": "kay_18", "name": "Embrace",      "hex": "#C89070", "finish": "matte" },
+      { "id": "kay_19", "name": "Treasure",     "hex": "#8A5848", "finish": "matte" },
+      { "id": "kay_20", "name": "Forever",      "hex": "#A01828", "finish": "matte" },
+      { "id": "kay_21", "name": "Promise",      "hex": "#C07880", "finish": "matte" },
+      { "id": "kay_22", "name": "Soul Mate",    "hex": "#9A3858", "finish": "matte" },
+      { "id": "kay_23", "name": "Panache",      "hex": "#6A1838", "finish": "matte" }
+    ]
+  },
+  {
+    "id": "nykaa",
+    "name": "Nykaa Cosmetics",
+    "type": "Online-First",
+    "shades": [
+      { "id": "nykaa_01", "name": "Wakeup Makeup",    "hex": "#D4907A", "finish": "matte" },
+      { "id": "nykaa_02", "name": "Bawse Lady",       "hex": "#A02840", "finish": "matte" },
+      { "id": "nykaa_03", "name": "Berry Smoothie",   "hex": "#6A2048", "finish": "matte" },
+      { "id": "nykaa_04", "name": "Mauve Matters",    "hex": "#9A6878", "finish": "matte" },
+      { "id": "nykaa_05", "name": "Fuchsia Feelings", "hex": "#C03878", "finish": "matte" },
+      { "id": "nykaa_06", "name": "Tangerine Dream",  "hex": "#E07850", "finish": "matte" },
+      { "id": "nykaa_07", "name": "Plum Affair",      "hex": "#602058", "finish": "matte" },
+      { "id": "nykaa_08", "name": "Mocha Latte",      "hex": "#9A6050", "finish": "matte" },
+      { "id": "nykaa_09", "name": "Scarlet Siren",    "hex": "#B82030", "finish": "matte" },
+      { "id": "nykaa_10", "name": "Crimson Kiss",     "hex": "#A0192F", "finish": "matte" }
+    ]
+  },
+  {
+    "id": "colorbar",
+    "name": "Colorbar",
+    "type": "Mid-Premium",
+    "shades": [
+      { "id": "cb_01", "name": "Take Me As I Am", "hex": "#C89070", "finish": "matte" },
+      { "id": "cb_02", "name": "True Red",        "hex": "#B01C2E", "finish": "matte" },
+      { "id": "cb_03", "name": "Dusty Mauve",     "hex": "#987080", "finish": "matte" },
+      { "id": "cb_04", "name": "Deep Plum",       "hex": "#522840", "finish": "matte" },
+      { "id": "cb_05", "name": "Coral Bliss",     "hex": "#DC6A50", "finish": "satin" },
+      { "id": "cb_06", "name": "Wine Not",        "hex": "#6A1E38", "finish": "matte" },
+      { "id": "cb_07", "name": "Peachy Nude",     "hex": "#D49068", "finish": "satin" },
+      { "id": "cb_08", "name": "Berry Queen",     "hex": "#6E2850", "finish": "matte" },
+      { "id": "cb_09", "name": "Brick Lane",      "hex": "#A84838", "finish": "matte" }
+    ]
+  },
+  {
+    "id": "elle18",
+    "name": "Elle 18",
+    "type": "Budget",
+    "shades": [
+      { "id": "e18_01", "name": "Pink Lust",    "hex": "#E0607A", "finish": "gloss" },
+      { "id": "e18_02", "name": "Scarlet",      "hex": "#C0301A", "finish": "matte" },
+      { "id": "e18_03", "name": "Coral Kiss",   "hex": "#E07858", "finish": "satin" },
+      { "id": "e18_04", "name": "Nude Blush",   "hex": "#D4A080", "finish": "satin" },
+      { "id": "e18_05", "name": "Boysenberry",  "hex": "#6A2850", "finish": "matte" },
+      { "id": "e18_06", "name": "Melon Mania",  "hex": "#E89060", "finish": "gloss" },
+      { "id": "e18_07", "name": "Wine Berry",   "hex": "#702038", "finish": "matte" },
+      { "id": "e18_08", "name": "Rose Gold",    "hex": "#C87868", "finish": "gloss" },
+      { "id": "e18_09", "name": "Nutty Latte",  "hex": "#9A6850", "finish": "matte" }
+    ]
+  },
+  {
+    "id": "myglamm",
+    "name": "MyGlamm",
+    "type": "D2C",
+    "shades": [
+      { "id": "mg_01", "name": "Rani Pink",     "hex": "#C03070", "finish": "matte" },
+      { "id": "mg_02", "name": "Truffle",       "hex": "#9A6050", "finish": "matte" },
+      { "id": "mg_03", "name": "Wine Night",    "hex": "#6A2030", "finish": "matte" },
+      { "id": "mg_04", "name": "Peachy Keen",   "hex": "#E8906A", "finish": "gloss" },
+      { "id": "mg_05", "name": "Magenta Magic", "hex": "#A0205A", "finish": "matte" },
+      { "id": "mg_06", "name": "Nude Beige",    "hex": "#C8907A", "finish": "satin" },
+      { "id": "mg_07", "name": "Berry Punch",   "hex": "#6A2848", "finish": "matte" },
+      { "id": "mg_08", "name": "Coral Fever",   "hex": "#D86050", "finish": "satin" }
+    ]
+  },
+  {
+    "id": "facescanada",
+    "name": "Faces Canada",
+    "type": "Mid-Range",
+    "shades": [
+      { "id": "fc_01", "name": "Passionate Red",     "hex": "#B82030", "finish": "matte" },
+      { "id": "fc_02", "name": "Make Me Maroon",     "hex": "#7A1828", "finish": "matte" },
+      { "id": "fc_03", "name": "Chocolate Overdose", "hex": "#6A3828", "finish": "matte" },
+      { "id": "fc_04", "name": "Cocoa Crush",        "hex": "#8A5040", "finish": "matte" },
+      { "id": "fc_05", "name": "Nude Pink",          "hex": "#D09080", "finish": "matte" },
+      { "id": "fc_06", "name": "Berry Nice",         "hex": "#6A2248", "finish": "matte" },
+      { "id": "fc_07", "name": "Coral Surprise",     "hex": "#D86858", "finish": "matte" },
+      { "id": "fc_08", "name": "Plum Passion",       "hex": "#602058", "finish": "matte" },
+      { "id": "fc_09", "name": "Buff Nude",          "hex": "#C8906A", "finish": "matte" }
+    ]
+  },
+  {
+    "id": "swissbeauty",
+    "name": "Swiss Beauty",
+    "type": "Budget",
+    "shades": [
+      { "id": "sb_01", "name": "Ruby Red",      "hex": "#B82028", "finish": "matte" },
+      { "id": "sb_02", "name": "Maroon Magic",  "hex": "#7A1830", "finish": "matte" },
+      { "id": "sb_03", "name": "Berry Burst",   "hex": "#682048", "finish": "matte" },
+      { "id": "sb_04", "name": "Coral Delight", "hex": "#E07060", "finish": "satin" },
+      { "id": "sb_05", "name": "Garnet Glam",   "hex": "#8A1C38", "finish": "matte" },
+      { "id": "sb_06", "name": "Natural Nude",  "hex": "#C89070", "finish": "matte" },
+      { "id": "sb_07", "name": "Fuchsia Fling", "hex": "#C03278", "finish": "matte" },
+      { "id": "sb_08", "name": "Wine Wonder",   "hex": "#6E1E38", "finish": "matte" },
+      { "id": "sb_09", "name": "Rustic Rose",   "hex": "#B87068", "finish": "satin" },
+      { "id": "sb_10", "name": "Chocolava",     "hex": "#6A3828", "finish": "matte" }
+    ]
+  },
+  {
+    "id": "plum",
+    "name": "Plum",
+    "type": "Clean Beauty",
+    "shades": [
+      { "id": "plum_01", "name": "Cocoa Mocha",    "hex": "#7A4838", "finish": "matte" },
+      { "id": "plum_02", "name": "Truffle Tease",  "hex": "#C8906A", "finish": "matte" },
+      { "id": "plum_03", "name": "Wine to Go",     "hex": "#6A1828", "finish": "matte" },
+      { "id": "plum_04", "name": "Red-tini",       "hex": "#8A1C30", "finish": "matte" },
+      { "id": "plum_05", "name": "Haute Shot",     "hex": "#7A1E30", "finish": "matte" },
+      { "id": "plum_06", "name": "Addictive Almond","hex": "#C8906A", "finish": "matte" }
+    ]
+  },
+  {
+    "id": "blueheaven",
+    "name": "Blue Heaven",
+    "type": "Budget",
+    "shades": [
+      { "id": "bh_01", "name": "Brown Twig",    "hex": "#8A4838", "finish": "matte" },
+      { "id": "bh_02", "name": "Velvet Maroon", "hex": "#7A1E30", "finish": "matte" },
+      { "id": "bh_03", "name": "Maroon Mania",  "hex": "#6A1C28", "finish": "matte" },
+      { "id": "bh_04", "name": "Chocoswirl",    "hex": "#6A3828", "finish": "matte" },
+      { "id": "bh_05", "name": "Ginger Brown",  "hex": "#A86848", "finish": "matte" }
+    ]
+  },
+  {
+    "id": "renee",
+    "name": "Renee Cosmetics",
+    "type": "D2C",
+    "shades": [
+      { "id": "renee_01", "name": "Love of Lavender", "hex": "#8A5878", "finish": "matte" },
+      { "id": "renee_02", "name": "Pride of Magenta", "hex": "#A82868", "finish": "matte" },
+      { "id": "renee_03", "name": "Grape Stain",      "hex": "#6A2858", "finish": "matte" },
+      { "id": "renee_04", "name": "Caramel Crumb",    "hex": "#B07858", "finish": "matte" },
+      { "id": "renee_05", "name": "Flaming Red",      "hex": "#B82030", "finish": "matte" },
+      { "id": "renee_06", "name": "Captivating Coral","hex": "#D86850", "finish": "matte" },
+      { "id": "renee_07", "name": "Tantalizing Taupe","hex": "#9A7868", "finish": "matte" }
+    ]
+  }
+]
