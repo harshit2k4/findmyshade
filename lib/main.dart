@@ -5,6 +5,8 @@ import 'core/theme/app_theme.dart';
 import 'core/constants/app_routes.dart';
 import 'features/home/home_screen.dart';
 import 'features/skin_tone/skin_tone_screen.dart';
+import 'features/brands/brands_screen.dart';
+import 'features/results/results_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -30,6 +32,8 @@ class FindMyShadeApp extends StatelessWidget {
       getPages: [
         GetPage(name: AppRoutes.home, page: () => const HomeScreen()),
         GetPage(name: AppRoutes.skinTone, page: () => const SkinToneScreen()),
+        GetPage(name: AppRoutes.brands, page: () => const BrandsScreen()),
+        GetPage(name: AppRoutes.results, page: () => const ResultsScreen()),
       ],
     );
   }

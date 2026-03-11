@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../core/constants/app_spacing.dart';
 import '../../core/constants/app_strings.dart';
 import '../../data/models/skin_tone_model.dart';
 import 'skin_tone_controller.dart';
@@ -30,38 +31,34 @@ class SkinToneScreen extends StatelessWidget {
 
             return Column(
               children: [
-                // Scrollable content
                 Expanded(
                   child: SingleChildScrollView(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: AppSpacing.screenH,
+                    ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const SizedBox(height: 8),
-
+                        const SizedBox(height: AppSpacing.sm),
                         Text(
                           AppStrings.skinToneSubtitle,
                           style: Theme.of(context).textTheme.bodyLarge
                               ?.copyWith(color: cs.onSurfaceVariant),
                         ),
-
-                        const SizedBox(height: 28),
-
+                        const SizedBox(height: AppSpacing.xl),
                         Text(
                           'Pick your tone',
                           style: Theme.of(context).textTheme.titleMedium,
                         ),
-
-                        const SizedBox(height: 14),
-
+                        const SizedBox(height: AppSpacing.md),
                         GridView.builder(
                           shrinkWrap: true,
                           physics: const NeverScrollableScrollPhysics(),
                           gridDelegate:
                               SliverGridDelegateWithFixedCrossAxisCount(
                                 crossAxisCount: crossCount,
-                                crossAxisSpacing: 14,
-                                mainAxisSpacing: 14,
+                                crossAxisSpacing: AppSpacing.md,
+                                mainAxisSpacing: AppSpacing.md,
                                 childAspectRatio:
                                     width / (crossCount * swatchH),
                               ),
@@ -78,16 +75,12 @@ class SkinToneScreen extends StatelessWidget {
                             );
                           },
                         ),
-
-                        const SizedBox(height: 32),
-
+                        const SizedBox(height: AppSpacing.xl),
                         Text(
                           'Or detect from a photo',
                           style: Theme.of(context).textTheme.titleMedium,
                         ),
-
-                        const SizedBox(height: 14),
-
+                        const SizedBox(height: AppSpacing.md),
                         Obx(
                           () => PhotoUploadCard(
                             onPick: ctrl.pickImage,
@@ -95,19 +88,21 @@ class SkinToneScreen extends StatelessWidget {
                             isDetecting: ctrl.isDetecting.value,
                           ),
                         ),
-
-                        const SizedBox(height: 16),
+                        const SizedBox(height: AppSpacing.md),
                       ],
                     ),
                   ),
                 ),
-
-                // Button always pinned to bottom
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 8, 20, 20),
+                  padding: const EdgeInsets.fromLTRB(
+                    AppSpacing.screenH,
+                    AppSpacing.sm,
+                    AppSpacing.screenH,
+                    AppSpacing.lg,
+                  ),
                   child: FilledButton(
                     onPressed: ctrl.proceed,
-                    child: const Text('Next - Pick Brands'),
+                    child: const Text('Next -> Pick Brands'),
                   ),
                 ),
               ],
