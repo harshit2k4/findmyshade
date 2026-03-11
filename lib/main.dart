@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+
 import 'core/theme/app_theme.dart';
 import 'core/constants/app_routes.dart';
+import 'core/theme/app_transitions.dart';
 import 'features/home/home_screen.dart';
 import 'features/skin_tone/skin_tone_screen.dart';
 import 'features/brands/brands_screen.dart';
@@ -29,11 +31,28 @@ class FindMyShadeApp extends StatelessWidget {
       themeMode: ThemeMode.system, // follows device setting
 
       initialRoute: AppRoutes.home,
+      transitionDuration: const Duration(milliseconds: 320),
       getPages: [
-        GetPage(name: AppRoutes.home, page: () => const HomeScreen()),
-        GetPage(name: AppRoutes.skinTone, page: () => const SkinToneScreen()),
-        GetPage(name: AppRoutes.brands, page: () => const BrandsScreen()),
-        GetPage(name: AppRoutes.results, page: () => const ResultsScreen()),
+        GetPage(
+          name: AppRoutes.home,
+          page: () => const HomeScreen(),
+          customTransition: SlideTransitionPage(),
+        ),
+        GetPage(
+          name: AppRoutes.skinTone,
+          page: () => const SkinToneScreen(),
+          customTransition: SlideTransitionPage(),
+        ),
+        GetPage(
+          name: AppRoutes.brands,
+          page: () => const BrandsScreen(),
+          customTransition: SlideTransitionPage(),
+        ),
+        GetPage(
+          name: AppRoutes.results,
+          page: () => const ResultsScreen(),
+          customTransition: SlideTransitionPage(),
+        ),
       ],
     );
   }
