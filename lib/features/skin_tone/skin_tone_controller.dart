@@ -5,6 +5,7 @@ import 'package:image/image.dart' as img;
 
 import '../../core/constants/app_routes.dart';
 import '../../data/models/skin_tone_model.dart';
+import '../../shared/widgets/app_snackbar.dart';
 
 class SkinToneController extends GetxController {
   final selectedTone = Rxn<SkinToneModel>();
@@ -84,10 +85,9 @@ class SkinToneController extends GetxController {
 
   void proceed() {
     if (selectedTone.value == null) {
-      Get.snackbar(
-        'Select a tone',
-        'Pick your skin tone to continue.',
-        snackPosition: SnackPosition.BOTTOM,
+      AppSnackbar.show(
+        message: 'Pick your skin tone to continue.',
+        type: SnackbarType.error,
       );
       return;
     }

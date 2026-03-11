@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../core/constants/app_spacing.dart';
 import '../../core/constants/app_strings.dart';
+import '../../shared/widgets/shimmer_loader.dart';
 import '../../shared/widgets/step_indicator.dart';
 import 'brands_controller.dart';
 import 'widgets/brand_card.dart';
@@ -19,7 +20,16 @@ class BrandsScreen extends StatelessWidget {
       body: SafeArea(
         child: Obx(() {
           if (ctrl.isLoading.value) {
-            return const Center(child: CircularProgressIndicator());
+            return const Column(
+              children: [
+                StepIndicator(
+                  currentStep: 2,
+                  totalSteps: 3,
+                  labels: ['Skin Tone', 'Brands', 'Results'],
+                ),
+                Expanded(child: ShimmerLoader(itemCount: 6)),
+              ],
+            );
           }
 
           return Column(

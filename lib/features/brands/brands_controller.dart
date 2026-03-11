@@ -2,6 +2,7 @@ import 'package:get/get.dart';
 import '../../core/constants/app_routes.dart';
 import '../../data/local/shades_loader.dart';
 import '../../data/models/brand_model.dart';
+import '../../shared/widgets/app_snackbar.dart';
 
 class BrandsController extends GetxController {
   final brands = <BrandModel>[].obs;
@@ -53,18 +54,16 @@ class BrandsController extends GetxController {
 
   void proceed() {
     if (selectedBrands.isEmpty) {
-      Get.snackbar(
-        'Select a brand',
-        'Pick at least one brand to continue.',
-        snackPosition: SnackPosition.BOTTOM,
+      AppSnackbar.show(
+        message: 'Pick at least one brand to continue.',
+        type: SnackbarType.error,
       );
       return;
     }
     if (selectedShades.isEmpty) {
-      Get.snackbar(
-        'Select shades',
-        'Pick at least one shade to continue.',
-        snackPosition: SnackPosition.BOTTOM,
+      AppSnackbar.show(
+        message: 'Pick at least one shade to continue.',
+        type: SnackbarType.error,
       );
       return;
     }
