@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../shared/widgets/step_indicator.dart';
 import '../../core/constants/app_spacing.dart';
 import '../../core/constants/app_strings.dart';
 import '../../data/models/skin_tone_model.dart';
@@ -31,6 +32,11 @@ class SkinToneScreen extends StatelessWidget {
 
             return Column(
               children: [
+                const StepIndicator(
+                  currentStep: 1,
+                  totalSteps: 3,
+                  labels: ['Skin Tone', 'Brands', 'Results'],
+                ),
                 Expanded(
                   child: SingleChildScrollView(
                     padding: const EdgeInsets.symmetric(
@@ -102,7 +108,7 @@ class SkinToneScreen extends StatelessWidget {
                   ),
                   child: FilledButton(
                     onPressed: ctrl.proceed,
-                    child: const Text('Next -> Pick Brands'),
+                    child: const Text('Next - Pick Brands'),
                   ),
                 ),
               ],

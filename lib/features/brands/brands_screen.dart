@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../core/constants/app_spacing.dart';
 import '../../core/constants/app_strings.dart';
+import '../../shared/widgets/step_indicator.dart';
 import 'brands_controller.dart';
 import 'widgets/brand_card.dart';
 
@@ -23,6 +24,11 @@ class BrandsScreen extends StatelessWidget {
 
           return Column(
             children: [
+              const StepIndicator(
+                currentStep: 2,
+                totalSteps: 3,
+                labels: ['Skin Tone', 'Brands', 'Results'],
+              ),
               Expanded(
                 child: ListView.separated(
                   padding: const EdgeInsets.fromLTRB(
