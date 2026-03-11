@@ -1,15 +1,15 @@
 name: findmyshade
-description: "A new Flutter project."
+description: Lipstick shade recommender for Indian skin tones.
 publish_to: 'none'
 version: 0.1.0
 
 environment:
-  sdk: ^3.10.4
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  
+
   # State Management
   get: ^4.6.6
 
@@ -23,8 +23,13 @@ dependencies:
   # UI
   glassmorphism: ^3.0.0
 
-  # Local Data
+  # Local Data + Favourites
   hive_flutter: ^1.1.0
+
+  # Share + Screenshot
+  share_plus: ^10.0.0
+  screenshot: ^3.0.0
+  path_provider: ^2.1.4
 
 dev_dependencies:
   flutter_test:
@@ -35,7 +40,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  
   assets:
     - assets/data/
     - assets/images/
