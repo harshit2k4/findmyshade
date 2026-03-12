@@ -2,17 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-import 'core/theme/app_theme.dart';
-import 'data/local/favourites_box.dart';
 import 'core/constants/app_routes.dart';
+import 'core/theme/app_theme.dart';
 import 'core/theme/app_transitions.dart';
-import 'features/home/home_screen.dart';
-import 'features/splash/splash_screen.dart';
-import 'features/skin_tone/skin_tone_screen.dart';
-import 'features/skin_tone/skin_tone_controller.dart';
-import 'features/brands/brands_screen.dart';
+import 'data/local/favourites_box.dart';
 import 'features/brands/brands_controller.dart';
+import 'features/brands/brands_screen.dart';
+import 'features/home/home_screen.dart';
 import 'features/results/results_screen.dart';
+import 'features/saved/saved_screen.dart';
+import 'features/skin_tone/skin_tone_controller.dart';
+import 'features/skin_tone/skin_tone_screen.dart';
+import 'features/splash/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,8 +34,7 @@ class FindMyShadeApp extends StatelessWidget {
       // Material 3 themes
       theme: AppTheme.light,
       darkTheme: AppTheme.dark,
-      themeMode: ThemeMode.system, // follows device setting
-
+      themeMode: ThemeMode.system,
       initialRoute: AppRoutes.splash,
       transitionDuration: const Duration(milliseconds: 320),
       getPages: [
@@ -51,7 +51,6 @@ class FindMyShadeApp extends StatelessWidget {
           name: AppRoutes.skinTone,
           page: () => const SkinToneScreen(),
           customTransition: SlideTransitionPage(),
-          // Keep controller alive so selections survive back navigation
           binding: BindingsBuilder(() => Get.put(SkinToneController())),
         ),
         GetPage(
@@ -63,6 +62,11 @@ class FindMyShadeApp extends StatelessWidget {
         GetPage(
           name: AppRoutes.results,
           page: () => const ResultsScreen(),
+          customTransition: SlideTransitionPage(),
+        ),
+        GetPage(
+          name: AppRoutes.saved,
+          page: () => const SavedScreen(),
           customTransition: SlideTransitionPage(),
         ),
       ],

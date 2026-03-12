@@ -14,4 +14,15 @@ class AppStrings {
       'Photos are stored locally on your device and never sent anywhere.';
   static const brandsTitle = 'Pick Your Brands';
   static const resultsTitle = 'Your Shades';
+  static const savedTitle = 'Saved Shades';
+  static const madeWith = 'Made with';
+  static const madeBy = 'by ABC';
+
+  static const disclaimerTitle = 'How results work';
+  static const disclaimerBody =
+      'Shade recommendations are calculated using Euclidean Color Distance '
+      'in RGB space — a mathematical algorithm that measures how close each '
+      'shade\'s color is to the ideal tones for your skin type. Results are '
+      'approximate and may not reflect every individual\'s unique undertone.\n\n'
+      'You are beautiful in your own way. This app is just a guide.';
 }

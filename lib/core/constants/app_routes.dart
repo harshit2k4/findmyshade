@@ -6,4 +6,5 @@ class AppRoutes {
   static const skinTone = '/skin-tone';
   static const brands = '/brands';
   static const results = '/results';
+  static const saved = '/saved';
 }
