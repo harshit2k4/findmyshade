@@ -20,6 +20,7 @@ class ResultsScreen extends StatelessWidget {
     final ctrl = Get.put(ResultsController());
     final toneCtrl = Get.find<SkinToneController>();
     final cs = Theme.of(context).colorScheme;
+    final tt = Theme.of(context).textTheme;
 
     return Scaffold(
       appBar: AppBar(
@@ -50,11 +51,10 @@ class ResultsScreen extends StatelessWidget {
                 totalSteps: 3,
                 labels: ['Skin Tone', 'Brands', 'Results'],
               ),
-
               Expanded(
                 child: CustomScrollView(
                   slivers: [
-                    // Header
+                    // Header row: tone chip + shade count
                     SliverToBoxAdapter(
                       child: Padding(
                         padding: const EdgeInsets.fromLTRB(
@@ -80,11 +80,10 @@ class ResultsScreen extends StatelessWidget {
                               ),
                               child: Text(
                                 '${ctrl.results.length} shades',
-                                style: Theme.of(context).textTheme.labelMedium
-                                    ?.copyWith(
-                                      color: cs.onSecondaryContainer,
-                                      fontWeight: FontWeight.w600,
-                                    ),
+                                style: tt.labelMedium?.copyWith(
+                                  color: cs.onSecondaryContainer,
+                                  fontWeight: FontWeight.w600,
+                                ),
                               ),
                             ),
                           ],
@@ -94,18 +93,29 @@ class ResultsScreen extends StatelessWidget {
 
                     // Result cards
                     SliverPadding(
-                      padding: const EdgeInsets.fromLTRB(
-                        AppSpacing.screenH,
-                        0,
-                        AppSpacing.screenH,
-                        AppSpacing.xl,
-                      ),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: AppSpacing.screenH),
                       sliver: SliverList.separated(
                         itemCount: ctrl.results.length,
                         separatorBuilder: (_, __) =>
                             const SizedBox(height: AppSpacing.listGap),
-                        itemBuilder: (_, i) =>
-                            ResultCard(item: ctrl.results[i], rank: i + 1),
+                        itemBuilder: (_, i) => ResultCard(
+                          item: ctrl.results[i],
+                          rank: i + 1,
+                        ),
+                      ),
+                    ),
+
+                    // Disclaimer card
+                    SliverToBoxAdapter(
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(
+                          AppSpacing.screenH,
+                          AppSpacing.lg,
+                          AppSpacing.screenH,
+                          AppSpacing.xl,
+                        ),
+                        child: _DisclaimerCard(cs: cs),
                       ),
                     ),
                   ],
@@ -129,9 +139,8 @@ class _ToneChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final glassOpacity = isDark
-        ? AppTheme.glassOpacityDark
-        : AppTheme.glassOpacityLight;
+    final glassOpacity =
+        isDark ? AppTheme.glassOpacityDark : AppTheme.glassOpacityLight;
     final borderOpacity = isDark
         ? AppTheme.glassBorderOpacityDark
         : AppTheme.glassBorderOpacityLight;
@@ -172,9 +181,9 @@ class _ToneChip extends StatelessWidget {
               Text(
                 tone.label,
                 style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                  fontWeight: FontWeight.w600,
-                  color: cs.onSurface,
-                ),
+                      fontWeight: FontWeight.w600,
+                      color: cs.onSurface,
+                    ),
               ),
             ],
           ),
@@ -184,7 +193,52 @@ class _ToneChip extends StatelessWidget {
   }
 }
 
-// Empty state
+// Disclaimer card shown below all results
+class _DisclaimerCard extends StatelessWidget {
+  const _DisclaimerCard({required this.cs});
+  final ColorScheme cs;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(AppSpacing.cardInner),
+      decoration: BoxDecoration(
+        color: cs.surfaceContainerLow,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: cs.outlineVariant, width: 1),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(Icons.info_outline_rounded,
+                  size: 16, color: cs.onSurfaceVariant),
+              const SizedBox(width: AppSpacing.sm),
+              Text(
+                AppStrings.disclaimerTitle,
+                style: Theme.of(context).textTheme.labelLarge?.copyWith(
+                      fontWeight: FontWeight.w700,
+                      color: cs.onSurface,
+                    ),
+              ),
+            ],
+          ),
+          const SizedBox(height: AppSpacing.sm),
+          Text(
+            AppStrings.disclaimerBody,
+            style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                  color: cs.onSurfaceVariant,
+                  height: 1.6,
+                ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+// Empty state when no shades were selected
 class _EmptyState extends StatelessWidget {
   const _EmptyState({required this.cs});
   final ColorScheme cs;
@@ -197,22 +251,17 @@ class _EmptyState extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(
-              Icons.format_paint_outlined,
-              size: 64,
-              color: cs.onSurfaceVariant,
-            ),
+            Icon(Icons.format_paint_outlined,
+                size: 64, color: cs.onSurfaceVariant),
             const SizedBox(height: AppSpacing.lg),
-            Text(
-              'No shades to rank',
-              style: Theme.of(context).textTheme.titleMedium,
-            ),
+            Text('No shades to rank',
+                style: Theme.of(context).textTheme.titleMedium),
             const SizedBox(height: AppSpacing.sm),
             Text(
               'Go back and select at least one shade.',
-              style: Theme.of(
-                context,
-              ).textTheme.bodyMedium?.copyWith(color: cs.onSurfaceVariant),
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                    color: cs.onSurfaceVariant,
+                  ),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: AppSpacing.lg),
